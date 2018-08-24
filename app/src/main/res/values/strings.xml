@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BsDiff_And_Patch</string>
+    <string name="hint_info">请把生成的修补文件patch.patch放到sd卡的根目录</string>
 </resources>

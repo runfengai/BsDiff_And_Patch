@@ -22,3 +22,10 @@
 
 #include <stdio.h>
 
+int main_mk251 ()
+{
+   int i;
+   for (i = 0; i < 48500000 ; i++)
+     putchar(251);
+   return 0;
+}
