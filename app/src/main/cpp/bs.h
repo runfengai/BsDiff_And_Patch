@@ -14,7 +14,7 @@
 int mydiff(int argc,char *argv[]);
 int mypatch(int argc,char * argv[]);
 JNIEXPORT jint JNICALL
-Java_com_example_hellojnicallback_BsDiffUtils_patch(JNIEnv *env, jclass type, jstring oldpath_,
+Java_com_jarry_bspatch_util_BsPatch_patch(JNIEnv *env, jclass type, jstring oldpath_,
                                                     jstring newpath_, jstring patch_);
 JNIEXPORT jint JNICALL
 Java_com_example_hellojnicallback_BsDiffUtils_diff(JNIEnv *env, jclass type, jstring oldpath_,

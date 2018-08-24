@@ -1,4 +1,4 @@
-package com.example.bjqt.testndk.util;
+package com.jarry.bspatch.util;
 
 import android.content.Context;
 import android.content.Intent;

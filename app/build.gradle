@@ -5,7 +5,7 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "com.example.bjqt.testndk"
+        applicationId "com.jarry.bspatch"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1
@@ -29,6 +29,7 @@ android {
             path "CMakeLists.txt"
         }
     }
+
 }
 
 dependencies {

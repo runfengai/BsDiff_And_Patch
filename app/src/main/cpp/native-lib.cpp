@@ -5,7 +5,7 @@
 extern "C"
 JNIEXPORT jint
 JNICALL
-Java_com_example_bjqt_testndk_util_BsPatch_patch(
+Java_com_jarry_bspatch_util_BsPatch_patch(
         JNIEnv *env,
         jclass type, jstring oldpath_,
         jstring newpath_, jstring patch_) {

@@ -4,7 +4,7 @@
 #include "bs.h"
 
 JNIEXPORT jint JNICALL
-Java_com_example_bjqt_testndk_util_BsPatch_patch(JNIEnv *env, jclass type, jstring oldpath_,
+Java_com_jarry_bspatch_util_BsPatch_patch(JNIEnv *env, jclass type, jstring oldpath_,
                                                     jstring newpath_, jstring patch_) {
     const char *oldpath = (*env)->GetStringUTFChars(env, oldpath_, 0);
     const char *newpath = (*env)->GetStringUTFChars(env, newpath_, 0);

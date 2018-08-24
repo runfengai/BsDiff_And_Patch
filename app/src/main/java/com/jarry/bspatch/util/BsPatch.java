@@ -1,4 +1,4 @@
-package com.example.bjqt.testndk.util;
+package com.jarry.bspatch.util;
 
 /**
  * 所在包名：com.example.bjqt.testndk.util

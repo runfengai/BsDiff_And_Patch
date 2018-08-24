@@ -1,4 +1,4 @@
-package com.example.bjqt.testndk;
+package com.jarry.bspatch;
 
 import android.Manifest;
 import android.content.Intent;
@@ -17,8 +17,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.bjqt.testndk.util.BsPatch;
-import com.example.bjqt.testndk.util.IncremUpgrade;
+
+import com.jarry.bspatch.util.BsPatch;
+import com.jarry.bspatch.util.IncremUpgrade;
 
 import java.io.File;
 
