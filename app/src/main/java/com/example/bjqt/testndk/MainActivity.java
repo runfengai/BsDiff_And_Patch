@@ -97,6 +97,10 @@ public class MainActivity extends AppCompatActivity {
     public static final int WRITE_SDCARD_REQUESTCODE = 2;
 
     public void install(View view) {
+        if (!newApk.exists()) {
+            Toast.makeText(MainActivity.this, "安装包不存在", Toast.LENGTH_LONG).show();
+            return;
+        }
         if (Build.VERSION.SDK_INT >= 26) {
             boolean b = getPackageManager().canRequestPackageInstalls();
             if (b) {
