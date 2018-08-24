@@ -3,6 +3,7 @@ package com.example.bjqt.testndk;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -23,7 +24,6 @@ import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
     static final String TAG = "MainActivity";
-    private String newApkPath = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         // Example of a call to a native method
         TextView tv = (TextView) findViewById(R.id.sample_text);
         tv.setText("测试数据源改变");
+        //添加的逻辑
+        tv.setTextColor(Color.BLUE);
     }
 
     /**
@@ -49,10 +51,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    File newApk = new File(Environment.getExternalStorageDirectory(), "new.apk");
 
     private void doBspatch() {
-
-        File newApk = new File(Environment.getExternalStorageDirectory(), "new.apk");
         File patch = new File(Environment.getExternalStorageDirectory(), "patch.patch");
         if (!patch.exists()) {
             Toast.makeText(MainActivity.this, "patch文件不存在", Toast.LENGTH_LONG).show();
@@ -63,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "local:" + local);
         new BsPatch().patch(local, newApk.getAbsolutePath(), patch.getAbsolutePath());
         if (newApk.exists()) {
-            newApkPath = newApk.getAbsolutePath();
             Toast.makeText(MainActivity.this, "合并完成，可以安装了", Toast.LENGTH_LONG).show();
             //安装
             Log.d(TAG, "合并完成，可以安装了");
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void install() {
-        IncremUpgrade.installApk(MainActivity.this, newApkPath);
+        IncremUpgrade.installApk(MainActivity.this, newApk.getAbsolutePath());
     }
 
 
