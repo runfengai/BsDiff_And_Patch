@@ -2,8 +2,9 @@ package com.jarry.bspatch.util;
 
 /**
  * 所在包名：com.example.bjqt.testndk.com.jarry.bspatch.util
- * 描述：
- * 作者：biantong
+ * 描述：引入c/c++代码，合并功能。
+ * 上传gradlew install;gradlew bintrayUpload
+ * 作者：jarry
  * 创建时间：2018/8/23
  * 修改人：
  * 修改时间：
