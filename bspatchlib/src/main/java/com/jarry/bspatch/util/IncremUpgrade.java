@@ -11,7 +11,7 @@ import android.text.TextUtils;
 import java.io.File;
 
 /**
- * 所在包名：com.example.bjqt.testndk.util
+ * 所在包名：com.example.bjqt.testndk.com.jarry.bspatch.util
  * 描述：增量升级
  * 作者：jarry
  * 创建时间：2018/8/23
