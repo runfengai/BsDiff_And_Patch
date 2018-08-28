@@ -1,7 +1,7 @@
-# 声明
+## 声明 ##
 增量升级功能，参考hongyang的开源项目，生成的合并功能开源库。生成增量包，参考博客：
 > [https://blog.csdn.net/lmj623565791/article/details/52761658](https://blog.csdn.net/lmj623565791/article/details/52761658)
-# 增量升级流程说明
+## 增量升级流程说明 ##
 参考app/demoapk/文件夹下三个文件old.apk、new.apk、patch.patch  
 
 1. **准备工作：新老版本的apk包，如old.apk,new.apk。**
@@ -11,7 +11,7 @@
 
 
 
-# 引入方式
+## 引入方式 ##
 gradle引入方式:
     
     compile 'com.jarry:bspatchlib:1.0.0'
@@ -19,7 +19,7 @@ gradle引入方式:
 
     implementation 'com.jarry:bspatchlib:1.0.0'
 
-# 调用方式
+## 调用方式 ##
     
     File patch = new File(Environment.getExternalStorageDirectory(), "patch.patch");
     if (!patch.exists()) {
