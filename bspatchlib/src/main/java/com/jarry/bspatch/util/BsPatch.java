@@ -15,5 +15,13 @@ public class BsPatch {
         System.loadLibrary("bspatch");
     }
 
+    /**
+     * 老的apk包与patch文件合并，最后生成新的apk包
+     *
+     * @param oldpath 老的apk包目录
+     * @param newpath 新生成的apk包目录
+     * @param patch   patch文件
+     * @return
+     */
     public static native int patch(String oldpath, String newpath, String patch);
 }
